@@ -1,0 +1,23 @@
+{
+  "name": "expense-tracker",
+  "version": "1.0.0",
+  "description": "People who travel, freelance internationally, or just shop from foreign stores often lose track of spending because every purchase is in a different currency. You are going to build a small web app that lets someone log expenses in whatever currency they paid in, and instantly see everything converted into one currency",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brovincemangwana/Expense-Tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brovincemangwana/Expense-Tracker/issues"
+  },
+  "homepage": "https://github.com/brovincemangwana/Expense-Tracker#readme"
+}
