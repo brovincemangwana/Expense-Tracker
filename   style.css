@@ -88,3 +88,19 @@ button {
 }
 
 button:hover { background: var(--primary-hover); }
+
+.list-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.list-header h2 { margin: 0; }
+
+.list-header .field {
+    margin: 0;
+    min-width: 180px;
+}
