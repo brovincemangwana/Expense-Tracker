@@ -2,6 +2,7 @@ const listEl = document.getElementById("expense-list");
 const emptyEl = document.getElementById("empty-message");
 const totalEl = document.getElementById("total-expenses");
 const totalCurrencyEl = document.getElementById("total-currency");
+const statusEl = document.getElementById("status");
 
 export function renderExpenses(expenses) {
     listEl.innerHTML = "";
@@ -42,4 +43,27 @@ export function renderExpenses(expenses) {
 export function renderTotal(total, currency) {
     totalEl.textContent = total.toFixed(2);
     totalCurrencyEl.textContent = currency;
+}
+
+
+export function populateCurrencies(codes, selected = "USD") {
+    const selects = [
+        document.getElementById("currency"),
+        document.getElementById("home-currency-select"),
+    ];
+
+    selects.forEach((select) => {
+        select.innerHTML = "";
+        codes.forEach((code) => {
+            const option = document.createElement("option");
+            option.value = code;
+            option.textContent = code;
+            select.appendChild(option);
+        });
+        select.value = selected;
+    });
+}
+
+export function showStatus(message) {
+    statusEl.textContent = message;
 }
