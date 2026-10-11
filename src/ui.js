@@ -45,7 +45,6 @@ export function renderTotal(total, currency) {
     totalCurrencyEl.textContent = currency;
 }
 
-
 export function populateCurrencies(codes, selected = "USD") {
     const selects = [
         document.getElementById("currency"),
