@@ -155,3 +155,15 @@ button:hover { background: var(--primary-hover); }
     font-weight: 700;
 }
 
+.delete-btn {
+    padding: 0.35rem 0.7rem;
+    font-size: 0.85rem;
+    background: var(--danger);
+}
+
+.delete-btn:hover { background: var(--danger-hover); }
+
+.delete-btn:focus-visible {
+    outline: 2px solid var(--danger);
+    outline-offset: 2px;
+}
