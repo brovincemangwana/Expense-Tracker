@@ -104,3 +104,54 @@ button:hover { background: var(--primary-hover); }
     margin: 0;
     min-width: 180px;
 }
+
+.empty-message {
+    margin: 0;
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--muted);
+}
+
+.empty-message.hidden { display: none; }
+
+.expense-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.expense-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.expense-item:last-child { border-bottom: none; }
+
+.expense-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.expense-description { font-weight: 600; }
+
+.expense-category {
+    font-size: 0.8rem;
+    color: var(--muted);
+    text-transform: capitalize;
+}
+
+.expense-amount {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.total p {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
